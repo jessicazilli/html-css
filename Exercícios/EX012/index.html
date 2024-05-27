@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="560" poster="imagens/london-thumb.png" controls>
+        <source src="midia/london-night.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p> <!--esse método deixa o site mais pesado, e mais caro para o cliente-->
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=F2HJCrcQZPez-Rpv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--Método recomendado para colocar vídeo no site, porque assim o site não consome tanto dinheiro do cliente, e o site será mais leve; sugere-se que o cliente crie um canal no Youtube e suba os vídeos por lá, para depois irem para o site-->
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+
+    <iframe src="https://player.vimeo.com/video/329663987?h=3226744581" width="560" height="310" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/329663987">FenderThe Mystical Journey of Jimmy Page&rsquo;s &rsquo;59 Telecaster - Nexus Studios for Fender</a> from <a href="https://vimeo.com/bishoygendi">Bishoy Gendi</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>

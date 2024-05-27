@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* 
+    Tudo que em HTML é id = em CSS é # - só pode 1 elemento
+    Tudo que em HTML é class = em CSS é . - pode vários elementos
+
+*/
+
+body {
+    background-color: rgb(213, 255, 213);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(34, 112, 34);
+}
+
+h1#principal { /* Posso colocar h1#principal ou apenas #principal */
+    text-align: center;
+    background-color: rgb(34, 112, 34);
+    color: white;
+}
+
+/* O que irá valer é o posto por último, por exemplo o h1 já tem atribuições, mas o hi principal sobrepõe porque está abaixo */
+
+h2 {
+    color: rgb(34, 112, 34);
+}
+
+.basico {
+    color: rgb(115, 192, 0);
+}
+
+.intermediario {
+    color: darkorange;
+}
+
+.avancado {
+    color: red;
+}

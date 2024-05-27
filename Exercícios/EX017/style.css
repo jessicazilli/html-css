@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    font-family: ;
+/* 
+Medidas Absolutas
+cm, mm, in, px, pt, pc
+
+Medidas Relativas
+em, ex, rem, vw, vh, %
+
+Recomentação da W3C -> Utilizar px e em
+*/
+
+    font-size: 1em; /*tamanho normal é 16px, que geralmente é igual a 1em*/
+
+    font-weight: 400;
+    /* pesos de fonte: lighter, normal, bold, bolder - pode ser representada por número também entre 100 a 900 */
+
+    font-style: italic;
+    /* Itálico, bold, normal, etc - pode usar o weight junto com style*/
+
+    text-decoration: underline;
+}
+
+h1 {
+
+    /* propriedade shorthand font
+- font-style -> font-weight -> font-size -> font-family */
+
+    font: italic bolder 3em 'Work Sans', sans-serif;
+}
