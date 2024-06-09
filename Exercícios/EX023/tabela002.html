@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -20,6 +21,17 @@
             padding: 10px;
             font-weight: bold;
         }
+
+        thead tr th {
+            position: sticky;
+            top: -1;
+            background-color: darkslategrey;
+        } /*para que o cabeçalho fique fixo e apareça mesmo quando rolamos para baixo*/
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        } /*criando efeito zebrado
+            dá pra colocar de 2 em 2, 3 em 3, ou selecionar somente os pares ou ínpares*/
 
         th, td {
             border: 1px solid black;
