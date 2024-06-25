@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* PEQUENOS DISPOSITIVOS */
+
+ul {
+    background-color: rgb(72, 72, 72);
+    overflow: hidden;
+    position: relative;
+}
+
+li {
+    display: none;
+}
+
+header a {
+    background-color: rgb(99, 99, 99);
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: -15px;
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.048);
+}
+
+header a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+}
+
+header a:hover {
+    background-color: rgba(189, 189, 189, 0.138);
+}

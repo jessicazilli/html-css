@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* IMPRESSORA */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+ul {
+    display: none;
+}
+
+main::after {
+    content: 'Essa impressão doi feita através do site www.cursoemvideo.com';
+    font-size: 1em;
+}
+
