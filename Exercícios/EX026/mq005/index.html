@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="estilo/principal.css" media="all">
-    <link rel="stylesheet" href="estilo/phone.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="estilo/phone.css">
+    <link rel="stylesheet" href="estilo/principal.css">
     <link rel="stylesheet" href="estilo/print.css" media="print">
 </head>
 <body onresize="mudouTamanho()">
@@ -37,7 +37,7 @@
 
         function mudouTamanho() {
             if (window.innerwidth >= 768) {
-                itens.style.display 'block'
+                itens.style.display = 'block'
             } else {
                 itens.style.display = 'none'
             }
