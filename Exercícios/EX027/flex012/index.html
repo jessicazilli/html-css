@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        div#cxA {
+            flex: 1 1 150px;
+            /* flex: 2 0 150px; 
+            Sempre grow - shrink - basis */
+        }
+
+        div#cxB {
+            flex: 1 1 200px;
+        }
+
+        div#cxC {
+            flex: 1 1 50px;
+        }
+
+        /* flex: 0 1 auto - config padrão
+        É o mesmo que --- flex: initial */
+
+        /* flex: 0 0 auto --- IGUAL --- flex: none */
+
+        /* flex: 1 1 auto --- IGUAL --- flex: auto
+        esse é o mais flexível que pode ser */
+
+        /* Se colocar apenas "flex: 3" significa que o valor é do grow, os demais ficam como padrão. */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html>
