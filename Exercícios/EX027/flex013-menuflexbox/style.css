@@ -26,12 +26,12 @@ header {
 }
 
 header h1 {
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     flex: 0 0 200px;
 }
 
 header nav {
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
@@ -57,6 +57,7 @@ main {
     background-color: white;
     margin: 10px;
     padding: 10px;
+    max-width: 900px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(49, 49, 49, 0.493);
 }
